@@ -1,0 +1,52 @@
+<ion-header>
+  <ion-navbar>
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>.About.You.</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+  <ion-item text-center>
+    <ion-label>Glad to have you on board! First, tell us a little about yourself</ion-label>
+
+  </ion-item>
+  <ion-item>
+    <ion-input type="text" placeholder="First Name"></ion-input>
+  </ion-item>
+
+  <ion-item>
+    <ion-input type="text" placeholder="Last Name"></ion-input>
+  </ion-item>
+
+  <ion-item>
+    <ion-input type="number" placeholder="Age"></ion-input>
+  </ion-item>
+
+  <ion-item>
+    <ion-input type="text" placeholder="Birthday"></ion-input>
+  </ion-item>
+
+  <ion-item>
+    <ion-label>Height</ion-label>
+    <ion-input type="number" placeholder="Feet"></ion-input>
+    <ion-input type="number" placeholder="Inches"></ion-input>
+  </ion-item>
+
+  <ion-list radio-group [(ngModel)]="relationship">
+    <ion-item>
+      <ion-label>Male</ion-label>
+      <ion-radio checked></ion-radio>
+    </ion-item>
+    <ion-item>
+      <ion-label>Female</ion-label>
+      <ion-radio value="Female"></ion-radio>
+    </ion-item>
+  </ion-list>
+
+  <button ion-button full (click)="navToConfirm()">
+    See my plan &nbsp;
+    <ion-icon name="arrow-forward"></ion-icon>
+  </button>
+</ion-content>

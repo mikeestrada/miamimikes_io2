@@ -1,0 +1,28 @@
+<ion-header>
+  <ion-navbar>
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>.Checkout.</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+
+  <ion-item>
+    <ion-input type="number" placeholder="Credit Card Number"></ion-input>
+  </ion-item>
+
+  <ion-item>
+    <ion-input type="text" placeholder="Expiration Date"></ion-input>
+  </ion-item>
+
+  <ion-item>
+    <ion-input type="number" placeholder="CVV"></ion-input>
+  </ion-item>
+
+  <p>
+    Reservation Details
+  </p>
+  <button ion-button full (click)="navToReceipt()">Checkout</button>
+</ion-content>

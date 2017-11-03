@@ -1,0 +1,54 @@
+<ion-header>
+  <ion-navbar>
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>.Reserve.</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+
+  <ion-item>
+    <ion-label>State</ion-label>
+    <ion-select [(ngModel)]="states">
+      <ion-option value="f">Texas</ion-option>
+      <ion-option value="m">Florida</ion-option>
+    </ion-select>
+  </ion-item>
+
+  <ion-item>
+    <ion-label>City</ion-label>
+    <ion-select [(ngModel)]="states">
+      <ion-option value="f">Texas</ion-option>
+      <ion-option value="m">Florida</ion-option>
+    </ion-select>
+  </ion-item>
+
+  <ion-item>
+    <ion-label>Venue</ion-label>
+    <ion-select [(ngModel)]="states">
+      <ion-option value="f">Texas</ion-option>
+      <ion-option value="m">Florida</ion-option>
+    </ion-select>
+  </ion-item>
+
+  <ion-item>
+    <ion-label>When?</ion-label>
+    <ion-select [(ngModel)]="states">
+      <ion-option value="f">Texas</ion-option>
+      <ion-option value="m">Florida</ion-option>
+    </ion-select>
+  </ion-item>
+
+  <ion-item>
+    <ion-label>What time?</ion-label>
+    <ion-select [(ngModel)]="states">
+      <ion-option value="f">Texas</ion-option>
+      <ion-option value="m">Florida</ion-option>
+    </ion-select>
+  </ion-item>
+
+
+  <button ion-button full (click)="navToAbout()">About you &nbsp;<ion-icon name="arrow-forward"></ion-icon></button>
+</ion-content>
