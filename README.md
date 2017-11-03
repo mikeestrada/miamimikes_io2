@@ -12,7 +12,11 @@ $ npm install -g ionic
 ```
 
 Then install the node modules:
-`npm install`
+```bash
+$ npm install
+```
 
 After node modules have been installed and you can see the node_modules folder in the root directory, run your app:
-`ionic serve`
+```bash
+$ ionic serve
+```
