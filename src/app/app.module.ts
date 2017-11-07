@@ -9,7 +9,7 @@ import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
 import {CustomerModule} from "../pages/customer/customer.module";
 import {CheckoutModule} from "../pages/checkout/checkout.module";
-import {VenueGridPage} from "../pages/customer/venue-grid/venue-grid";
+import {ProgressModule} from "../pages/progress/progress.module";
 
 @NgModule({
   declarations: [
@@ -20,14 +20,14 @@ import {VenueGridPage} from "../pages/customer/venue-grid/venue-grid";
     BrowserModule,
     CustomerModule,
     CheckoutModule,
+    ProgressModule,
     IonicModule.forRoot(MyApp),
   ],
   schemas: [ CUSTOM_ELEMENTS_SCHEMA ],
   bootstrap: [IonicApp],
   entryComponents: [
     MyApp,
-    HomePage,
-    VenueGridPage
+    HomePage
   ],
   providers: [
     StatusBar,

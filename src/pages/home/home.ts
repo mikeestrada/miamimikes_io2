@@ -12,10 +12,7 @@ export class HomePage {
   constructor(public navCtrl: NavController) {
   }
 
-  public navigateToAboutYou() {
+  public navNext(): void {
     this.navCtrl.setRoot(AboutYou);
-  }
-  public navigate(component: string) {
-    this.navCtrl.push(component);
   }
 }

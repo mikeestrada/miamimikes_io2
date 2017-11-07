@@ -4,7 +4,7 @@
       <ion-icon name="menu"></ion-icon>
     </button>
     <div text-right>
-      <img src="../../assets/imgs/mmm_logo.png" height="65" width="65"/>
+      <img src="../../assets/imgs/mmm_logo.png" class="responsive-img" height="55" width="55"/>
     </div>
   </ion-navbar>
 </ion-header>
@@ -16,8 +16,8 @@
     Your personal automated meal planner!
   </p>
   <p>
-  <button ion-button (click)="navigateToAboutYou()">Let's plan</button>
-  <button ion-button color="secondary">View progress</button>
+  <button ion-button (click)="navNext()">Let's plan</button>
+  <button ion-button (click)="navNext()" color="secondary">View progress</button>
   </p>
 
 

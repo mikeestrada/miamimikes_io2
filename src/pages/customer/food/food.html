@@ -1,0 +1,23 @@
+<ion-header>
+  <ion-navbar>
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>Goal</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+  <ion-item>
+    Select b(,l, or d) for week X(1)
+    How many times a day do you want to eat?
+    (3)
+  </ion-item>
+  <button ion-button full (click)="navNext()">
+    Review final meal plan
+  </button>
+  <button color="secondary" ion-button full (click)="navToProgress()">
+    Begin progress! &nbsp;
+    <ion-icon name="arrow-forward"></ion-icon>
+  </button>
+</ion-content>

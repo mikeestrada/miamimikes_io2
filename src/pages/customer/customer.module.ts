@@ -1,29 +1,28 @@
 import { NgModule } from '@angular/core';
 import {AboutYou} from "./about-you/about-you";
 import {IonicModule} from "ionic-angular/module";
-import {ReservePage} from "./reserve/reserve";
-import {ConfirmReservationPage} from "./confirm-reservation/confirm-reservation";
+import {GoalPage} from "./goal/goal";
+import {PlanPage} from "./plan/plan";
+import {FoodPage} from "./food/food";
 import {SharedModule} from "../../shared/shared.module";
-import {VenueGridPage} from "./venue-grid/venue-grid";
-import {VenueListPage} from "./venue-list/venue-list";
+
 @NgModule({
   imports: [
-    IonicModule.forRoot(ReservePage),
+    IonicModule.forRoot(AboutYou),
     SharedModule
   ],
   declarations: [
     AboutYou,
-    ReservePage,
-    ConfirmReservationPage,
-    VenueListPage,
-    VenueGridPage
+    GoalPage,
+    PlanPage,
+    FoodPage
   ],
   exports: [
     AboutYou,
-    ReservePage,
-    VenueListPage,
-    VenueGridPage
+    GoalPage,
+    PlanPage,
+    FoodPage
   ],
-  entryComponents: [AboutYou, ConfirmReservationPage]
+  entryComponents: [AboutYou, GoalPage, PlanPage, FoodPage]
 })
 export class CustomerModule {}

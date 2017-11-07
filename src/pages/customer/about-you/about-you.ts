@@ -1,6 +1,6 @@
 import {Component} from '@angular/core';
 import {NavController} from "ionic-angular/index";
-import {ConfirmReservationPage} from "../confirm-reservation/confirm-reservation";
+import {GoalPage} from "../goal/goal";
 
 @Component({
   selector: 'about-you',
@@ -11,7 +11,7 @@ export class AboutYou {
   constructor(public navCtrl: NavController) {
   }
 
-  public navToConfirm() {
-    this.navCtrl.push(ConfirmReservationPage);
+  public navNext() {
+    this.navCtrl.push(GoalPage);
   }
 }

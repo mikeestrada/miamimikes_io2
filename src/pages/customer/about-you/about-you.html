@@ -3,14 +3,13 @@
     <button ion-button menuToggle>
       <ion-icon name="menu"></ion-icon>
     </button>
-    <ion-title>.About.You.</ion-title>
+    <ion-title>About.You</ion-title>
   </ion-navbar>
 </ion-header>
 
 <ion-content padding>
   <ion-item text-center>
     <ion-label>Glad to have you on board! First, tell us a little about yourself</ion-label>
-
   </ion-item>
   <ion-item>
     <ion-input type="text" placeholder="First Name"></ion-input>
@@ -21,11 +20,8 @@
   </ion-item>
 
   <ion-item>
-    <ion-input type="number" placeholder="Age"></ion-input>
-  </ion-item>
-
-  <ion-item>
-    <ion-input type="text" placeholder="Birthday"></ion-input>
+    <ion-label>Birthday</ion-label>
+    <ion-datetime displayFormat="MM/DD/YYYY" [(ngModel)]="myDate"></ion-datetime>
   </ion-item>
 
   <ion-item>
@@ -45,8 +41,8 @@
     </ion-item>
   </ion-list>
 
-  <button ion-button full (click)="navToConfirm()">
-    See my plan &nbsp;
+  <button ion-button full (click)="navNext()">
+    Where you want to be &nbsp;
     <ion-icon name="arrow-forward"></ion-icon>
   </button>
 </ion-content>
