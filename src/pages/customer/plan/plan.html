@@ -8,7 +8,11 @@
 </ion-header>
 
 <ion-content padding>
-  Calendar goes here
+  <ion-calendar [(ngModel)]="date"
+                (onChange)="onChange($event)"
+                [type]="type"
+                [format]="'YYYY-MM-DD'">
+  </ion-calendar>
 
   <button ion-button full (click)="navNext()">
     Select food &nbsp;

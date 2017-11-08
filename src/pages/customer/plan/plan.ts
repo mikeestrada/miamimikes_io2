@@ -8,10 +8,17 @@ import {FoodPage} from "../food/food";
 })
 export class PlanPage {
 
+  date: string;
+  type: 'string';
+
   constructor(public navCtrl: NavController) {
   }
 
   public navNext() {
     this.navCtrl.push(FoodPage);
+  }
+
+  public onChange($event) {
+    console.log($event);
   }
 }

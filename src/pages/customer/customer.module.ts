@@ -5,11 +5,13 @@ import {GoalPage} from "./goal/goal";
 import {PlanPage} from "./plan/plan";
 import {FoodPage} from "./food/food";
 import {SharedModule} from "../../shared/shared.module";
+import {CalendarModule} from "ion2-calendar/dist/index";
 
 @NgModule({
   imports: [
     IonicModule.forRoot(AboutYou),
-    SharedModule
+    SharedModule,
+    CalendarModule
   ],
   declarations: [
     AboutYou,
