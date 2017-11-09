@@ -1,14 +1,17 @@
 import { NgModule, CUSTOM_ELEMENTS_SCHEMA  } from '@angular/core';
-import {VenueItemComponent} from "./component/venue-item/venue-item.component";
+import {CalendarComponent} from "./component/calendar/calendar.component";
+import {CalendarModule} from "ion2-calendar/dist/index";
 
 @NgModule({
-  imports: [],
+  imports: [
+    CalendarModule
+  ],
   declarations: [
-    VenueItemComponent
+    CalendarComponent
   ],
   schemas: [ CUSTOM_ELEMENTS_SCHEMA ],
   exports: [
-    VenueItemComponent
+    CalendarComponent
   ]
 })
 export class SharedModule {}
