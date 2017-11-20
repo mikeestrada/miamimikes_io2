@@ -7,17 +7,22 @@
   </ion-navbar>
 </ion-header>
 
-<ion-content padding>
-  <ion-item>
-    Select b(,l, or d) for week X(1)
-    How many times a day do you want to eat?
-    (3)
-  </ion-item>
-  <button ion-button full (click)="navNext()">
+<ion-content text-center padding>
+  <h2>
+    Alright great, so we know how many calories we need to consume to reach our goal.
+    <br>Let's pick out some food options for you.
+    <br>Feel free to mix and match!
+    <br><br>But first, tell us how you would like to group your food selections:
+  </h2>
+
+  <h3><a>Just pick all my food for me</a></h3>
+  <h3><a>I want to select same foods for each week</a></h3>
+  <h3><a>I want to select exactly what I will eat each day</a></h3>
+  <!--<button ion-button full (click)="navNext()">
     Review final meal plan
   </button>
   <button color="secondary" ion-button full (click)="navToProgress()">
     Begin progress! &nbsp;
     <ion-icon name="arrow-forward"></ion-icon>
-  </button>
+  </button>-->
 </ion-content>

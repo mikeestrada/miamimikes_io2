@@ -11,6 +11,8 @@ import {CustomerModule} from "../pages/customer/customer.module";
 import {CheckoutModule} from "../pages/checkout/checkout.module";
 import {ProgressModule} from "../pages/progress/progress.module";
 
+import { ReactiveFormsModule } from '@angular/forms';
+
 @NgModule({
   declarations: [
     MyApp,
@@ -21,6 +23,7 @@ import {ProgressModule} from "../pages/progress/progress.module";
     CustomerModule,
     CheckoutModule,
     ProgressModule,
+    ReactiveFormsModule,
     IonicModule.forRoot(MyApp),
   ],
   schemas: [ CUSTOM_ELEMENTS_SCHEMA ],

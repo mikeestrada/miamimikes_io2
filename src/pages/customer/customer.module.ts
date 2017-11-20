@@ -6,6 +6,7 @@ import {PlanPage} from "./plan/plan";
 import {FoodPage} from "./food/food";
 import {SharedModule} from "../../shared/shared.module";
 import {CalendarModule} from "ion2-calendar/dist/index";
+import {FoodSelectPage} from "./food/food-select/food-select";
 
 @NgModule({
   imports: [
@@ -17,14 +18,16 @@ import {CalendarModule} from "ion2-calendar/dist/index";
     AboutYou,
     GoalPage,
     PlanPage,
-    FoodPage
+    FoodPage,
+    FoodSelectPage
   ],
   exports: [
     AboutYou,
     GoalPage,
     PlanPage,
-    FoodPage
+    FoodPage,
+    FoodSelectPage
   ],
-  entryComponents: [AboutYou, GoalPage, PlanPage, FoodPage]
+  entryComponents: [AboutYou, GoalPage, PlanPage, FoodPage, FoodSelectPage]
 })
 export class CustomerModule {}
