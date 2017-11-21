@@ -8,34 +8,33 @@
 </ion-header>
 
 <ion-content padding>
-
-
-  <ion-item text-center>
-    <ion-label>What are your goals?</ion-label>
-  </ion-item>
-
-  <ion-list radio-group [(ngModel)]="relationship">
-    <ion-item>
-      <ion-label>Lose weight</ion-label>
-      <ion-radio checked></ion-radio>
+  <form [formGroup]="goalForm">
+    <ion-item text-center>
+      <ion-label>What are your goals?</ion-label>
     </ion-item>
+
+    <ion-list radio-group formControlName="goalDirection">
+      <ion-item>
+        <ion-label>Lose weight</ion-label>
+        <ion-radio checked value="lose"></ion-radio>
+      </ion-item>
+      <ion-item>
+        <ion-label>Gain muscle</ion-label>
+        <ion-radio value="gain"></ion-radio>
+      </ion-item>
+    </ion-list>
+
     <ion-item>
-      <ion-label>Gain muscle</ion-label>
-      <ion-radio></ion-radio>
+      <ion-input type="number" placeholder="How much (lbs)?" formControlName="goalWeight"></ion-input>
     </ion-item>
-  </ion-list>
 
-  <ion-item>
-    <ion-input type="number" placeholder="How much (lbs)?"></ion-input>
-  </ion-item>
+    <ion-item>
+      <ion-label>By when?</ion-label>
+      <ion-datetime displayFormat="MM/DD/YYYY" formControlName="goalDate"></ion-datetime>
+    </ion-item>
+  </form>
 
-  <ion-item>
-    <ion-label>By when?</ion-label>
-    <ion-datetime displayFormat="MM/DD/YYYY" [(ngModel)]="myDate"></ion-datetime>
-  </ion-item>
-
-
-  <button ion-button full (click)="navNext()">
+  <button ion-button full [disabled]="!goalForm.valid" (click)="navNext()">
     See my plan &nbsp;
     <ion-icon name="arrow-forward"></ion-icon>
   </button>
