@@ -1,0 +1,16 @@
+<ion-header>
+  <ion-navbar>
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>About.You</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+  <form [formGroup]="planForm">
+    <about-you *ngIf="pageIndex == 'about'"></about-you>
+    <goal *ngIf="pageIndex == 'goal'"></goal>
+    <plan *ngIf="pageIndex == 'plan'"></plan>
+  </form>
+</ion-content>

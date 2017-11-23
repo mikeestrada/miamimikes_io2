@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import {NavController} from "ionic-angular/index";
-import {PlanPage} from "../plan/plan";
+import {PlanPage} from "../plan-calculator-form/plan/plan";
 import {DashboardPage} from "../../progress/dashboard/dashboard";
 
 @Component({

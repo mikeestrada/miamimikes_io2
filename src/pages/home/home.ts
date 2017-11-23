@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { NavController } from 'ionic-angular';
-import {AboutYou} from "../customer/about-you/about-you";
+import {PlanCalculatorComponent} from "../customer/plan-calculator-form/plan-calculator-form.component";
 
 @Component({
   selector: 'page-home',
@@ -13,6 +13,6 @@ export class HomePage {
   }
 
   public navNext(): void {
-    this.navCtrl.setRoot(AboutYou);
+    this.navCtrl.setRoot(PlanCalculatorComponent);
   }
 }

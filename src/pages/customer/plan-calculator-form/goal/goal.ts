@@ -1,14 +1,15 @@
-import { Component } from '@angular/core';
-import {NavController} from "ionic-angular/index";
+import { Component, Output, EventEmitter } from '@angular/core';
+import { NavController } from "ionic-angular/index";
 import {PlanPage} from "../plan/plan";
 import {Validators, FormBuilder, FormGroup } from '@angular/forms';
-import {AppConstants} from "../../../app/app.constants";
+import {AppConstants} from "../../../../app/app.constants";
 
 @Component({
   selector: 'goal',
   templateUrl: 'goal.html'
 })
 export class GoalPage {
+  @Output() goalFormComplete = new EventEmitter();
   public goalForm: FormGroup;
 
   constructor(public navCtrl: NavController, private formBuilder: FormBuilder) {
@@ -21,7 +22,7 @@ export class GoalPage {
   }
 
   public navNext() {
-    console.log(this.goalForm.value);
+    this.goalFormComplete.emit(this.goalForm);
     this.navCtrl.push(PlanPage);
   }
 }

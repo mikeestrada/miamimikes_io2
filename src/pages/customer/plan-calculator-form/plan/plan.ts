@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
-import {NavController} from "ionic-angular/index";
-import {FoodPage} from "../food/food";
+import { FoodPage } from "../../food/food";
+import { NavController } from "ionic-angular/index";
 
 @Component({
   selector: 'plan',
